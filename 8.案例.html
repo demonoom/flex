@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .layout {
+            width: 500px;
+            height: 600px;
+            background-color: #cccccc;
+            margin: 10px auto;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        header {
+            height: 50px;
+            background-color: red;
+            width: 100%;
+        }
+
+        footer {
+            height: 50px;
+            background-color: gray;
+            width: 100%;
+        }
+
+        main {
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        main > article {
+            height: 100%;
+            background-color: yellow;
+            width: 200px;
+        }
+
+        main > aside {
+            height: 100%;
+            background-color: blue;
+            flex: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="layout">
+    <header></header>
+    <main>
+        <article></article>
+        <aside></aside>
+    </main>
+    <footer></footer>
+</div>
+</body>
+</html>

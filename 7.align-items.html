@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 900px;
+            height: 600px;
+            border: 1px solid #cccccc;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            /*align-items: 设置子元素（伸缩想）在侧轴方向上的对齐方式
+            center:设置在侧轴方向上居中对齐
+            flex-start:设置在侧轴方向上顶对齐
+            flex-end:设置在侧轴方向上底对齐
+            stretch:拉伸；让子元素在侧轴方向上进行拉伸，填充满整个侧轴方向>>默认值
+            baseline:文本基线
+            */
+            align-items: center;
+        }
+
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .second {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /*设置单个元素在侧轴方向上的对齐方式*/
+            align-self: flex-end;
+        }
+
+        .third {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="first">1</div>
+    <div class="second" style="font-size: 100px">sdsd</div>
+    <div class="third">3</div>
+</div>
+</body>
+</html>

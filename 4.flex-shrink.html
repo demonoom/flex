@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 500px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*flex-shrink:定义收缩比例，通过设置的值来计算收缩空间
+            比例值计算：当前空间的flex-shrink/所有兄弟元素的flex-shrink的和
+            默认值为1*/
+            flex-shrink: 0;
+        }
+
+        .second {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            flex-shrink: 1;
+        }
+
+        .third {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+</div>
+</body>
+</html>

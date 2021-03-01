@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 900px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*flex-grow:可以来扩展子元素的宽度;设置当前元素应该占据剩余空间的比例值
+            比例值计算：当前空间的flex-grow/所有兄弟元素的flex-grow的和
+            flex-grow的默认是0：说明子元素并不会去占据剩余的空间*/
+            flex-grow: 1; /*1/(1+0+0)=100%*/
+        }
+
+        .second {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            flex-grow: 1;
+        }
+
+        .third {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+</div>
+</body>
+</html>

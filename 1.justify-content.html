@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 1000px;
+            height: 200px;
+            border: 1px solid red;
+            box-sizing: border-box;
+            /*display: flex：设置父容器为伸缩盒子：会使每一个子元素自动变成伸缩项*/
+            display: flex;
+            /*设置子元素在主轴方向（默认为row）的排列方式*/
+            justify-content: space-between;
+            /*
+                flex-start：让子元素从父元素起始位置开始排列
+                flex-end：让子元素从父元素结束位置开始排列
+                center：让子元素从父元素中间位置开始排列
+                space-between：左右对齐父元素的起始位置和结束位置，中间平均分，产生相同的间距
+                space-around:平均分布
+            */
+        }
+
+        .first {
+            width: 200px;
+            height: 100%;
+            background-color: red;
+        }
+
+        .second {
+            width: 200px;
+            height: 100%;
+            background-color: green;
+        }
+
+        .third {
+            width: 200px;
+            height: 100%;
+            background-color: blue;
+        }
+
+        .forth {
+            width: 200px;
+            height: 100%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="forth"></div>
+</div>
+</body>
+</html>
